@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+           <div class="co-ordinates"></div>
+
+</body>
+
+         <style type="text/css">
+         	*{
+         		padding: 0;
+         		margin: 0;
+         		box-sizing: border-box;
+         	}
+
+         	body{
+         		background:lightgreen;
+         	}
+
+         	.co-ordinates{
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%,-50%);
+              min-width:200px;
+              min-height: 40px;
+              font-family: 'input mono';
+              font-size: 40px;
+              text-align: center;
+              background-color: grey;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              padding:15px 15px;
+              outline: 1px solid black;
+              outline-offset: -5px;
+              user-select: none;
+         	}
+
+         	.co-ordinates:hover{
+
+              background-color: white
+              
+         	}
+         </style>
+   
+              <script type="text/javascript">
+                const box=document.querySelector('.co-ordinates');
+              	window.addEventListener('mousemove',function(e){
+
+              		box.textContent="x: "+ e.pageX+" y: "+ (608-e.pageY);
+
+              	});
+
+
+              </script>
+</html>
