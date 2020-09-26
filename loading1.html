@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<div class="container">
+		
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+           
+	</div>
+
+</body>
+
+        <style type="text/css">
+        	
+                 *{
+                 	padding: 0;
+                 	margin: 0;
+                 	box-sizing: border-box;
+                 }
+
+                 body{
+                 	background-color: black;
+                 }
+
+                 .container{
+                 	position: absolute;
+                 	top:50%;
+                 	left: 50%;
+                 	transform: translate(-50%,-50%);
+                 	height: 400px;
+                 	width: 800px;
+                 	background-color: transparent;
+                 	display: grid;
+                 	grid-template-columns: repeat(11,1fr);
+                 	justify-content: space-between;
+                 
+                 }
+
+                 .container>span{
+
+                 	height:80%;
+                 	transform-origin: 50% 50%;
+                 	margin:auto 25px;
+                 	border-radius: 30px;
+
+                 }
+
+                .container>span:nth-child(1){
+                	animation: a 1s 1s linear infinite;
+                	background-color: green;
+                }
+
+                @keyframes a{
+                	0%{height: 80%}
+                	50%{height: 20%;}
+                	100%{height: 80%;}
+                }
+
+                .container>span:nth-child(2){
+                	animation: b 1s 0.8s linear infinite;
+                	background-color: red;
+                }
+
+                @keyframes b{
+                	0%{height: 80%}
+                	50%{height: 20%;}
+                	100%{height: 80%;}
+                }
+
+                .container>span:nth-child(3){
+                	animation: c 1s 0.6s linear infinite;
+                	background-color: blue;
+                }
+                
+
+                @keyframes c{
+                	0%{height: 80%}
+                	50%{height: 20%;}
+                	100%{height: 80%;}
+                }
+                .container>span:nth-child(4){
+                	animation: d 1s 0.4s linear infinite;
+                	background-color: yellow;
+                }
+
+                @keyframes d{
+                	0%{height: 80%}
+                	50%{height: 20%;}
+                	100%{height: 80%;}
+                }
+
+                .container>span:nth-child(5){
+                	animation: e  1s 0.2s linear infinite;
+                	background-color:pink;
+                }
+
+                @keyframes e{
+                	0%{height: 80%}
+                	50%{height: 20%;}
+                	100%{height: 80%;}
+                }
+
+                .container>span:nth-child(6){
+                	animation: f  1s 0s linear infinite;
+                	background-color:white;
+                }
+
+                @keyframes f{
+                	0%{height: 80%}
+                	50%{height: 20%;}
+                	100%{height: 80%;}
+                }
+
+                .container>span:nth-child(7){
+                	animation: g  1s 0.2s linear infinite;
+                	background-color:pink;
+                }
+
+                @keyframes g{
+                	0%{height: 80%}
+                	50%{height: 20%;}
+                	100%{height: 80%;}
+                }
+
+                .container>span:nth-child(8){
+                	animation: e 1s 0.4s linear infinite;
+                	background-color: yellow;
+                }
+
+                @keyframes e{
+                	0%{height: 80%}
+                	50%{height: 20%;}
+                	100%{height: 80%;}
+                }
+
+                .container>span:nth-child(9){
+                	animation: f 1s 0.6s linear infinite;
+                	background-color: blue;
+                }
+
+                @keyframes f{
+                	0%{height: 80%}
+                	50%{height: 20%;}
+                	100%{height: 80%;}
+                }
+
+                .container>span:nth-child(10){
+                	animation: g 1s 0.8s linear infinite;
+                	background-color: red;
+                }
+
+                @keyframes g{
+                	0%{height: 80%}
+                	50%{height: 20%;}
+                	100%{height: 80%;}
+                }
+
+                .container>span:nth-child(11){
+                	animation: h 1s 1s linear infinite;
+                	background-color: green;
+                }
+
+                @keyframes h{
+                	0%{height: 80%}
+                	50%{height: 20%;}
+                	100%{height: 80%;}
+                }
+
+                
+
+
+
+        </style>
+</html>
