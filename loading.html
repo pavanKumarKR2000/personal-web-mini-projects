@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<div class="grid">
+		  <div></div>
+		  <div></div>
+		  <div></div>
+		  <div></div>
+		  <div></div>
+		  <div></div>
+		  <div></div>
+		  <div></div>
+		  <div></div>
+
+	</div>
+
+</body>
+
+           <style type="text/css">
+
+           	*{
+           		padding: 0;
+           		margin: 0;
+           		box-sizing: border-box;
+           	}
+
+           	body{
+           		background-color: black;
+           	}
+
+           	.grid{
+                
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+           		height: 300px;
+           		width: 300px;
+           		display: grid;
+           		grid-template-columns: repeat(3,1fr);
+           		grid-gap: 5px;
+           		padding: 5px 5px;
+           	}
+
+           	.grid>div{
+           		background-color:orange;
+           		opacity: 0;
+           	}
+
+           	.grid>div:nth-child(1){
+           		animation: a 1s  0.125s linear infinite;
+           		border-top-left-radius: 0%;
+           	}
+
+           	.grid>div:nth-child(2){
+                 animation: b 1s  0.25s linear infinite;
+           	}
+
+           	.grid>div:nth-child(3){
+           		animation: c 1s  0.375s linear infinite;
+           		border-top-right-radius: 0%;
+           	}
+
+           		.grid>div:nth-child(6){
+           		animation: e 1s 0.5s linear infinite;
+           	}
+
+           	.grid>div:nth-child(9){
+           		animation: h 1s 0.625s linear infinite;
+           		border-bottom-right-radius: 0%;
+           	}
+
+           		.grid>div:nth-child(8){
+           		animation: g 1s 0.75s linear infinite;
+
+           	}
+
+           	.grid>div:nth-child(7){
+           		animation: f 1s 0.875s linear infinite;
+           		border-bottom-left-radius: 0%;
+           	}
+
+
+           	.grid>div:nth-child(4){
+           		animation: d 1s 1s linear infinite;
+           	}
+
+           	@keyframes a{
+
+           		from{opacity: 1;}
+           		to{opacity: 0;}
+           	}
+
+           		@keyframes b{
+
+           		from{opacity: 1;}
+           		to{opacity: 0;}
+           	}
+
+           		@keyframes c{
+
+           		from{opacity: 1;}
+           		to{opacity: 0;}
+           	}
+
+           		@keyframes d{
+
+           		from{opacity: 1;}
+           		to{opacity: 0;}
+           	}
+
+           		@keyframes e{
+
+           		from{opacity: 1;}
+           		to{opacity: 0;}
+           	}
+
+           		@keyframes f{
+
+           		from{opacity: 1;}
+           		to{opacity: 0;}
+           	}
+
+           		@keyframes g{
+
+           		from{opacity: 1;}
+           		to{opacity: 0;}
+           	}
+
+           		@keyframes h{
+
+           		from{opacity: 1;}
+           		to{opacity: 0;}
+           	}
+
+           		
+           	.grid>div:nth-child(5){
+           		opacity: 1;
+           		background-color:transparent;
+           	}
+
+           	
+
+
+
+           </style>
+</html>
