@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     
+           <form class="frm">
+                     <input type="email" placeholder="email address" class="eml">
+                     <input type="password" placeholder="password" class="psw">
+                     <input type="submit">
+           </form>
+
+           <div class="login">
+                        Login
+           </div>
+</body>
+
+        <style>
+                  *{
+                      padding: 0;
+                      margin: 0;
+                      box-sizing: border-box;
+                  }
+
+                  body{
+                      background-color: rgb(34, 204, 226);
+                  }
+
+                  .login{
+                      position: absolute;
+                      width:250px ;
+                      height:100px;
+                      top: 25%;
+                      left: 50%;
+                      transform: translate(-50%,-50%);
+                      background-color:transparent;
+                      font-family: 'movie poster personal use';
+                      font-size: 70px;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      
+                  }
+                  .frm{
+                      background-image: linear-gradient(30deg,rgba(34, 190, 230, 0.37),skyblue);
+                      /* background-color:lightgreen; */
+                      position: absolute;
+                      top: 50%;
+                      left: 50%;
+                      transform: translate(-50%,-50%);
+                      width: 300px;
+                      height: 500px;
+                      padding-top: 160px;
+                      box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.3) ,-4px -4px 10px 1px rgba(255,255,255,0.4);
+                      border-radius: 20px;
+                      
+                  }
+
+                  form input{
+                      margin:30px 25px;
+                      width:250px;
+                      height: 35px;
+                      font-family: hack;
+                      font-size: 15px;
+                      text-align: center;
+                      outline: none;
+                      border-radius: 10px;
+                      border: 0;
+                  }
+
+                  form>input:nth-child(1){
+                    box-shadow: 3px 3px 4px rgba(0,0,0,0.3) ,-1px -1px 3px rgba(255,255,255,0.5);
+                  }
+                  form>input:nth-child(2){
+                    box-shadow: 3px 3px 4px rgba(0,0,0,0.3) ,-1px -1px 3px rgba(255,255,255,0.5); 
+                  }
+                  form>input:nth-child(3){
+                      border-radius: 10px;
+                      background-color:orange;
+                      font-weight: bold;
+                      font-size:25px;
+                      font-weight:lighter;
+                      box-shadow: 3px 3px 4px rgba(0,0,0,0.3) ,-1px -1px 3px rgba(255,255,255,0.5);
+                      font-family: 'movie poster personal use';
+                      letter-spacing:3px;
+                  }
+
+        </style>
+</html>
