@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+        <button>BUTTON</button>    
+    
+</body>
+           <style>
+
+               *{
+                   padding: 0;
+                   margin: 0;
+                   box-sizing: border-box;
+                   font-family: poppins;
+               }
+               body{
+                   background-color: black;
+               }
+               button{
+                             height: 100px;
+                             width: 300px;
+                             outline:none;
+                             position: absolute;
+                             top: 50%;
+                             left: 50%;
+                             transform: translate(-50%,-50%);
+                             font-size: 40px;
+                             border: 8px solid red;
+                             background-color:skyblue;
+               }
+
+               button:hover::before{
+                  left: 63%;
+               }
+               button:hover::after{
+                  right: 63%;
+               }
+
+               button::before{
+                   position: absolute;
+                   top: -10%;
+                   left: -3%;
+                   content: "";
+                   height: 10%;
+                   width:40%;
+                   background-color:black;
+                   transition: 0.7s ease-in-out;
+               }
+               button::after{
+                   position: absolute;
+                   bottom: -10%;
+                   right: -3%;
+                   content: "";
+                   height: 10%;
+                   width:40%;
+                   background-color:black;
+                   transition: 0.7s ease-in-out;
+               }
+               }
+
+           </style>
+</html>
